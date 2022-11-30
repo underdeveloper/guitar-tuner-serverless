@@ -1,0 +1,60 @@
+<html lang="en">
+    <link rel= "stylesheet" type= "text/css" href= "/styles/index.css">
+    <div class = "title">
+        <h1>
+            Guitar Tuner
+        </h1>
+        <p>
+            Thanks to https://alexanderell.is/posts/tuner/ for Autocorrelation Algorithm tutorial
+        <p>
+        </div>
+    
+     <div id="the">
+    <section id = "section">
+        <div class="column">
+                <div id = "group" class="group">
+                    <div align="center">
+                        <canvas class="visualizer" width="0" height="0">
+                    </div>
+                    <div id="noteInstruction" class="noteInstruction">
+                        <h1 id="note"></h1>
+                        <p id="frequency"></p>
+                        <p id="instruction">Press Start to Begin</p>
+                        <p>
+                            <button id="init" onclick="init()" class="button-1">
+                            Start
+                            </button>
+                        </p>
+                    </div>
+                </div>
+        </div>
+        <div class="column">
+            <div id="noteForm">
+            <p align="center">
+                <!-- <legend>Select string to tune</legend> -->
+                <form>
+                    <div class="radio" align="center">
+                        <input id="first" type="radio" label = "E2" name="tuning" value = "6">
+                        <input id="second" type="radio" label = "A2" name="tuning" value = "5">
+                        <input id="third" type="radio" label = "D3" name="tuning" value = "4">
+                    </div>
+                    <div style="padding-left: 10%;">
+                        <img align ="center" src="/images/guitarfret.png" width="auto" style="max-width:70%;">
+                    </div>
+                    <div class="radio" align="center">
+                        <input id="fourth" type="radio" label = "E4" name="tuning" value = "1">
+                        <input id="fifth" type="radio" label = "B3" name="tuning" value = "2">
+                        <input id="sixth" type="radio" label = "G3" name="tuning" value = "3">
+                    </div>
+        
+                </form>
+                
+            </p>
+            </div>
+        </div>
+    </section>
+    </div>
+    
+    <script src="/scripts/tuner.js"></script>
+
+</html>

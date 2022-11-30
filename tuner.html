@@ -1,0 +1,61 @@
+<html lang="en">
+    <link href='https://fonts.googleapis.com/css?family=Alfa Slab One' rel='stylesheet'>
+    <link rel= "stylesheet" type= "text/css" href= "./web/static/styles/index.css">
+    <div class = "title">
+        <h1 style="font-family: 'Alfa Slab One';color: #666666; font-size:xxx-large;">
+            Guitar Tuner
+        </h1>
+        <p style="font-family: 'Alfa Slab One';color: #4285f4;font-size:small;" id="credit">
+            Thanks to https://alexanderell.is/posts/tuner/ for Autocorrelation Algorithm tutorial
+        <p>
+        </div>
+    
+     <div id="the">
+    <section id = "section">
+        <div class="column">
+                <div id = "group" class="group">
+                    <div align="center">
+                        <canvas class="visualizer" width="0" height="0">
+                    </div>
+                    <div id="noteInstruction" class="noteInstruction">
+                        <h1 id="note"></h1>
+                        <p id="frequency"></p>
+                        <p id="instruction">Press Start to Begin</p>
+                        <p>
+                            <button id="init" onclick="init()" class="button-1">
+                            Start
+                            </button>
+                        </p>
+                    </div>
+                </div>
+        </div>
+        <div class="column">
+            <div id="noteForm">
+            <p align="center" style="font-family: 'Alfa Slab One';color: #4285f4;font-size:xx-large;" id="credit" >
+                <!-- <legend>Select string to tune</legend> -->
+                <form>
+                    <div class="radio" align="center">
+                        <input id="first" type="radio" onclick="buttonAppear()" label = "E2" name="tuning" value = "6">
+                        <input id="second" type="radio" onclick="buttonAppear()" label = "A2" name="tuning" value = "5">
+                        <input id="third" type="radio" onclick="buttonAppear()" label = "D3" name="tuning" value = "4">
+                    </div>
+                    <div style="padding-left: 10%;">
+                        <img align ="center" src="./guitarfret.png" width="auto" style="max-width:70%;">
+                    </div>
+                    <div class="radio" align="center">
+                        <input id="fourth" type="radio" onclick="buttonAppear()" label = "E4" name="tuning" value = "1">
+                        <input id="fifth" type="radio" onclick="buttonAppear()" label = "B3" name="tuning" value = "2">
+                        <input id="sixth" type="radio" onclick="buttonAppear()" label = "G3" name="tuning" value = "3">
+                    </div>
+        
+                </form>
+                
+            </p>
+            </div>
+        </div>
+    </section>
+    </div>
+    
+    <script src="web/scripts/tuner.js"></script>
+
+</html>

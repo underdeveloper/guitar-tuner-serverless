@@ -191,3 +191,20 @@ label {
 .the {
     height: 720px;
 }
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(19, 91, 247, 0.596);
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+.footer p {
+    font-family: 'Body';
+    color: white;
+}
